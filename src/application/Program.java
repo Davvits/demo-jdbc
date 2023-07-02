@@ -24,6 +24,12 @@ public class Program {
 		Department dep1 = new Department(2,null);
 		List<Seller> list = sellerDao.findByDepartment(dep1);
 		list.stream().forEach(System.out::println);
+		
+		System.out.println();
+		
+		System.out.println("=========== TEST: 2 seller findAll ===");
+		List<Seller> list2 = sellerDao.findAll();
+		list2.stream().forEach(System.out::println);
 	}
 
 }
