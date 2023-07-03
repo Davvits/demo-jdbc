@@ -47,6 +47,12 @@ public class Program {
 		sellerDao.update(s2);;
 		System.out.println("Update! new news "+s2);
 		
+		System.out.println();
+		
+		System.out.println("=========== TEST: DELETE l ===");
+		Seller s3 = sellerDao.findById(12);
+		sellerDao.deleteById(12);;
+		System.out.println("DELETED "+s3);
 		
 	}
 
